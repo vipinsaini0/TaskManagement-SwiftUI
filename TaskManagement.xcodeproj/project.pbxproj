@@ -11,6 +11,10 @@
 		9436908D2819AAD900E1AC17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9436908C2819AAD900E1AC17 /* ContentView.swift */; };
 		9436908F2819AADA00E1AC17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9436908E2819AADA00E1AC17 /* Assets.xcassets */; };
 		943690922819AADA00E1AC17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 943690912819AADA00E1AC17 /* Preview Assets.xcassets */; };
+		9436909B2819AE5000E1AC17 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9436909A2819AE5000E1AC17 /* Task.swift */; };
+		9436909E2819AF2B00E1AC17 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9436909D2819AF2B00E1AC17 /* TaskViewModel.swift */; };
+		943690A02819B20A00E1AC17 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9436909F2819B20A00E1AC17 /* HomeView.swift */; };
+		943690A52819B64D00E1AC17 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943690A42819B64D00E1AC17 /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		9436908C2819AAD900E1AC17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9436908E2819AADA00E1AC17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		943690912819AADA00E1AC17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9436909A2819AE5000E1AC17 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		9436909D2819AF2B00E1AC17 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		9436909F2819B20A00E1AC17 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		943690A42819B64D00E1AC17 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,10 @@
 		943690892819AAD900E1AC17 /* TaskManagement */ = {
 			isa = PBXGroup;
 			children = (
+				943690A12819B51C00E1AC17 /* Extensions */,
+				9436909C2819AF1400E1AC17 /* ViewModel */,
+				943690982819AE3500E1AC17 /* Model */,
+				943690992819AE3B00E1AC17 /* Views */,
 				9436908A2819AAD900E1AC17 /* TaskManagementApp.swift */,
 				9436908C2819AAD900E1AC17 /* ContentView.swift */,
 				9436908E2819AADA00E1AC17 /* Assets.xcassets */,
@@ -65,6 +77,38 @@
 				943690912819AADA00E1AC17 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		943690982819AE3500E1AC17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9436909A2819AE5000E1AC17 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		943690992819AE3B00E1AC17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9436909F2819B20A00E1AC17 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9436909C2819AF1400E1AC17 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9436909D2819AF2B00E1AC17 /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		943690A12819B51C00E1AC17 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				943690A42819B64D00E1AC17 /* ViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				943690A52819B64D00E1AC17 /* ViewExtension.swift in Sources */,
 				9436908D2819AAD900E1AC17 /* ContentView.swift in Sources */,
+				9436909E2819AF2B00E1AC17 /* TaskViewModel.swift in Sources */,
+				9436909B2819AE5000E1AC17 /* Task.swift in Sources */,
+				943690A02819B20A00E1AC17 /* HomeView.swift in Sources */,
 				9436908B2819AAD900E1AC17 /* TaskManagementApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
