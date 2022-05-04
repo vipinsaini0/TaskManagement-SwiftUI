@@ -46,7 +46,7 @@ struct NewTaskView: View {
                 }
             }
             .listStyle(.insetGrouped)
-            .navigationTitle("Add New Task")
+            .navigationTitle(taskModel.editTask != nil ? "Edit Task" : "Add New Task")
             .navigationBarTitleDisplayMode(.inline)
             .interactiveDismissDisabled() // Disable dismiss on Swipe down
             .toolbar {
